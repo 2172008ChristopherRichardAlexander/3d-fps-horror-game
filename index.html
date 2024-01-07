@@ -12,9 +12,23 @@
         margin: 0;
         overflow-y: hidden;
     }
+    button {
+        position: absolute;
+    }
 </style>
 
 <body>
+    <button id="btn1">Click me</button>
+    <script type="importmap">
+        {
+            "imports": {
+            "three": "./node_modules/three/build/three.module.js",
+            "orbitcontrols": "./node_modules/three/examples/jsm/controls/OrbitControls.js",
+            "pointers": "./node_modules/three/examples/jsm/controls/PointerLockControls.js"
+            }
+        }
+    </script>
+    
     <script type="module" src="lib/ground.js"></script>
     <script type="module" src="lib/tree.js"></script>
     <script type="module" src="lib/sky.js"></script>
