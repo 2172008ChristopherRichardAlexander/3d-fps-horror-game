@@ -5,16 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ChristopMan</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<style>
-    body {
-        margin: 0;
-        overflow-y: hidden;
-    }
-</style>
-
 <body>
+    <div id="loading-screen">
+        <div class="loading-spinner">
+            <svg class="spinner" viewBox="0 0 50 50">
+                <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+            </svg>
+        </div>
+        <p>Loading...</p>
+    </div>
+
     <script type="importmap">
         {
             "imports": {
@@ -27,6 +30,7 @@
         }
     </script>
     
+    <script type="module" src="lib/init.js"></script>
     <script type="module" src="lib/ground.js"></script>
     <script type="module" src="lib/tree.js"></script>
     <script type="module" src="lib/sky.js"></script>
