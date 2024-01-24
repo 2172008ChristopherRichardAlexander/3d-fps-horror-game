@@ -57,3 +57,20 @@ body {
     letter-spacing: 8px;
     font-size: 48px;
 }
+
+.stamina-bar-container {
+    position: absolute;
+    width: 30%;
+    height: 40px;
+    background-color: #ddd;
+    margin-left: 2%;
+    margin-top: 43%;
+    border: 2px solid white;
+}
+
+.stamina-bar {
+    height: 100%;
+    background-color: blue;
+    width: 100%;
+    transition: width 0.5s;
+}

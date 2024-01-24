@@ -3,50 +3,50 @@
     {
       "bufferView": 2,
       "componentType": 5126,
-      "count": 1377,
+      "count": 4450,
       "max": [
-        1.0,
-        0.07001029700040817,
-        0.4587480127811432
+        21.992820739746094,
+        75.25748443603516,
+        363.2244873046875
       ],
       "min": [
-        -1.0,
-        -0.07001029700040817,
-        -0.4587480127811432
+        -21.848928451538086,
+        -76.02279663085938,
+        -51.295501708984375
       ],
       "type": "VEC3"
     },
     {
       "bufferView": 2,
-      "byteOffset": 16524,
+      "byteOffset": 53400,
       "componentType": 5126,
-      "count": 1377,
+      "count": 4450,
       "max": [
-        1.0,
-        1.0,
-        1.0
+        0.9999058842658997,
+        0.9999841451644897,
+        0.9999956488609314
       ],
       "min": [
-        -1.0,
-        -1.0,
-        -1.0
+        -0.9999914765357971,
+        -0.9999814629554749,
+        -0.9999956488609314
       ],
       "type": "VEC3"
     },
     {
       "bufferView": 3,
       "componentType": 5126,
-      "count": 1377,
+      "count": 4450,
       "max": [
         1.0,
         1.0,
-        1.0,
+        0.9999940991401672,
         1.0
       ],
       "min": [
         -1.0,
         -1.0,
-        -1.0,
+        -0.9999830722808838,
         -1.0
       ],
       "type": "VEC4"
@@ -54,30 +54,30 @@
     {
       "bufferView": 1,
       "componentType": 5126,
-      "count": 1377,
+      "count": 4450,
       "max": [
-        0.9987829923629761,
-        0.9901430010795593
+        0.9857940077781677,
+        0.9900000095367432
       ],
       "min": [
-        0.0012166399974375963,
-        0.004853319842368364
+        0.009999999776482582,
+        0.009999999776482582
       ],
       "type": "VEC2"
     },
     {
       "bufferView": 0,
       "componentType": 5125,
-      "count": 4080,
+      "count": 15720,
       "type": "SCALAR"
     }
   ],
   "asset": {
     "extras": {
-      "author": "TheFalkonett (https://sketchfab.com/TheFalkonett)",
+      "author": "Frybrix (https://sketchfab.com/Frybrix)",
       "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
-      "source": "https://sketchfab.com/3d-models/old-key-d846b203f4754ee3825e8c4c76d21b21",
-      "title": "Old Key"
+      "source": "https://sketchfab.com/3d-models/key-99ee9ff58fd14cb19309da81d0b098c9",
+      "title": "Key"
     },
     "generator": "Sketchfab-12.68.0",
     "version": "2.0"
@@ -85,30 +85,30 @@
   "bufferViews": [
     {
       "buffer": 0,
-      "byteLength": 16320,
+      "byteLength": 62880,
       "name": "floatBufferViews",
       "target": 34963
     },
     {
       "buffer": 0,
-      "byteLength": 11016,
-      "byteOffset": 16320,
+      "byteLength": 35600,
+      "byteOffset": 62880,
       "byteStride": 8,
       "name": "floatBufferViews",
       "target": 34962
     },
     {
       "buffer": 0,
-      "byteLength": 33048,
-      "byteOffset": 27336,
+      "byteLength": 106800,
+      "byteOffset": 98480,
       "byteStride": 12,
       "name": "floatBufferViews",
       "target": 34962
     },
     {
       "buffer": 0,
-      "byteLength": 22032,
-      "byteOffset": 60384,
+      "byteLength": 71200,
+      "byteOffset": 205280,
       "byteStride": 16,
       "name": "floatBufferViews",
       "target": 34962
@@ -116,30 +116,31 @@
   ],
   "buffers": [
     {
-      "byteLength": 82416,
+      "byteLength": 276480,
       "uri": "scene.bin"
     }
   ],
   "images": [
     {
-      "uri": "textures/material_baseColor.png"
+      "uri": "textures/Default_baseColor.png"
     },
     {
-      "uri": "textures/material_metallicRoughness.png"
+      "uri": "textures/Default_metallicRoughness.png"
     },
     {
-      "uri": "textures/material_normal.png"
+      "uri": "textures/Default_normal.png"
     }
   ],
   "materials": [
     {
-      "alphaMode": "MASK",
-      "name": "material",
+      "name": "Default",
       "normalTexture": {
-        "index": 2
+        "index": 2,
+        "scale": 0.5992759146341463
       },
       "occlusionTexture": {
-        "index": 1
+        "index": 1,
+        "strength": 0.7700076219512195
       },
       "pbrMetallicRoughness": {
         "baseColorTexture": {
@@ -147,13 +148,14 @@
         },
         "metallicRoughnessTexture": {
           "index": 1
-        }
+        },
+        "roughnessFactor": 0.3397484756097561
       }
     }
   ],
   "meshes": [
     {
-      "name": "defaultMaterial",
+      "name": "Object_0",
       "primitives": [
         {
           "attributes": {
@@ -175,21 +177,21 @@
         1
       ],
       "matrix": [
-        0.06824229461315712,
-        -0.0526439913011192,
-        0.05071094111667483,
+        1.0,
         0.0,
-        0.07217402565738595,
-        0.037546101771982046,
-        -0.05814809289795297,
         0.0,
-        0.011571495407394994,
-        0.07628172153654277,
-        0.06361760591890821,
         0.0,
-        1.6859999618645816e-07,
-        2.2849999936624957e-07,
-        -1.7150000530818938e-07,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
         1.0
       ],
       "name": "Sketchfab_model"
@@ -198,35 +200,11 @@
       "children": [
         2
       ],
-      "matrix": [
-        1.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        -4.371139006309477e-08,
-        0.999999999999999,
-        0.0,
-        0.0,
-        -0.999999999999999,
-        -4.371139006309477e-08,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        1.0
-      ],
-      "name": "Collada visual scene group"
-    },
-    {
-      "children": [
-        3
-      ],
-      "name": "Key"
+      "name": "key.obj.cleaner.materialmerger.gles"
     },
     {
       "mesh": 0,
-      "name": "defaultMaterial"
+      "name": "Object_2"
     }
   ],
   "samplers": [
