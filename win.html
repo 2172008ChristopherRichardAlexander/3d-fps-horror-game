@@ -20,8 +20,8 @@
     </style>
   </head>
   <body>
-    <video id="myVideo" controls autoplay muted>
-      <source src="./vid/Congratulations Video.mp4" type="video/mp4" />
+    <video id="myVideo" controls autoplay>
+      <source src="vid/win.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
 
@@ -40,9 +40,11 @@
 
       video.addEventListener("click", toggleFullScreen);
 
-      video.addEventListener("canplaythrough", () => {
-        video.play();
+      video.addEventListener("play", () => {
+        video.removeAttribute("autoplay");
       });
+
+      console.log(video);
     </script>
   </body>
 </html>
